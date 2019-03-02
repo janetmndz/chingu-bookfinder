@@ -9,6 +9,9 @@ $lpurple: #8776ae
 
 =debug
     border: 1px solid rgba(200,0,0,0.5)
+=smallscreen
+    @media (max-width: 800px)
+        @content
 
 *, *::before, *::after
     box-sizing: border-box
@@ -25,10 +28,12 @@ main
     margin: 0 auto
     width: 85%
     height: auto
+    +smallscreen
+        width: 90%
     .title
         font-family: $headingfont
         text-align: center
-        font-size: 5rem
+        font-size: 4.5rem
         color: $dpurple
         line-height: 2
         padding: 0
@@ -36,12 +41,16 @@ main
         padding-top: 2.5rem
         text-transform: lowercase
         letter-spacing: 1px
+        +smallscreen
+            font-size: 3.5rem
 
 .search-wrapper
     margin: 0 auto
     width: 50%
     height: auto
     box-shadow: 5px 5px 10px 5px transparentize($black, 0.85)
+    +smallscreen
+        width: 80%
     .search-form
         display: flex
         align-items: center
@@ -75,7 +84,9 @@ main
     align-content: space-around
     height: 100%
     margin: 0 auto
-    max-width: 1024px;
+    max-width: 1024px
+    +smallscreen
+        flex-flow: column nowrap
     .placement-text
         font-family: $headingfont
         width: 100%
@@ -94,6 +105,9 @@ main
         display: flex
         flex-direction: column
         justify-content: space-between
+        +smallscreen
+            width: 80%
+            margin: 5% 10%
         h1
             font-family: $contentfont
             font-size: 1.75rem

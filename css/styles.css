@@ -19,10 +19,16 @@ main {
   height: auto;
 }
 
+@media (max-width: 800px) {
+  main {
+    width: 90%;
+  }
+}
+
 main .title {
   font-family: "Abril Fatface", cursive;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #341F68;
   line-height: 2;
   padding: 0;
@@ -32,12 +38,24 @@ main .title {
   letter-spacing: 1px;
 }
 
+@media (max-width: 800px) {
+  main .title {
+    font-size: 3.5rem;
+  }
+}
+
 .search-wrapper {
   margin: 0 auto;
   width: 50%;
   height: auto;
   -webkit-box-shadow: 5px 5px 10px 5px rgba(17, 11, 17, 0.15);
           box-shadow: 5px 5px 10px 5px rgba(17, 11, 17, 0.15);
+}
+
+@media (max-width: 800px) {
+  .search-wrapper {
+    width: 80%;
+  }
 }
 
 .search-wrapper .search-form {
@@ -95,6 +113,15 @@ main .title {
   max-width: 1024px;
 }
 
+@media (max-width: 800px) {
+  .display {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
 .display .placement-text {
   font-family: "Abril Fatface", cursive;
   width: 100%;
@@ -123,6 +150,13 @@ main .title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .display .book__hold {
+    width: 80%;
+    margin: 5% 10%;
+  }
 }
 
 .display .book__hold h1 {

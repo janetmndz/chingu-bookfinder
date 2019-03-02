@@ -20,7 +20,6 @@ function display(){
 function logBooks(arr){
     if (arr !== undefined){
         const html = arr.map(b => {
-            console.dir(b);
             const title = b.volumeInfo.title;
             const image = (b.volumeInfo.hasOwnProperty('imageLinks')) ? (b.volumeInfo.imageLinks.thumbnail) : "https://placekitten.com/200/350";
             const authors = (b.volumeInfo.hasOwnProperty('authors')) ? (b.volumeInfo.authors.join(', ')) : "N/A";
