@@ -67,7 +67,7 @@ main .title {
   cursor: pointer;
   background: #F5F5F5;
   border: none;
-  padding: 0 1rem;
+  padding: 1rem 0.5rem;
   width: 15%;
   font-size: 1.5rem;
 }
@@ -85,13 +85,14 @@ main .title {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
   height: 100%;
   margin: 0 auto;
+  max-width: 1024px;
 }
 
 .display .placement-text {
@@ -104,16 +105,43 @@ main .title {
 }
 
 .display .book__hold {
-  width: 43%;
+  position: relative;
+  width: 40%;
   background: #F5F5F5;
-  padding: 1.25rem;
-  margin: 2rem;
+  padding: 0 1.25rem;
+  margin: 2% 2.5% 2% 5%;
   border-radius: 8px;
   -webkit-box-shadow: 2px 3px 6px rgba(17, 11, 17, 0.3);
           box-shadow: 2px 3px 6px rgba(17, 11, 17, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.display .book__hold img {
+.display .book__hold h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.75rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #110B11;
+  text-align: left;
+  border: 1px solid #5858587a;
+}
+
+.display .book__hold .book__info {
+  margin-bottom: 2.5rem;
+}
+
+.display .book__hold .book__info .book__image {
   width: 40%;
   float: left;
   border: 1px solid rgba(17, 11, 17, 0.3);
@@ -121,7 +149,7 @@ main .title {
           box-shadow: 7px 7px 14px 0px rgba(17, 11, 17, 0.2);
 }
 
-.display .book__hold .book__info {
+.display .book__hold .book__info .book__details {
   width: 54%;
   float: right;
   display: -webkit-box;
@@ -134,21 +162,44 @@ main .title {
   font-family: "Open Sans", sans-serif;
 }
 
-.display .book__hold .book__info h1 {
-  font-size: 1.75rem;
-  padding: 0.5rem 0;
+.display .book__hold .book__info .book__details p {
+  color: #3f293f;
+  font-size: 0.95rem;
+  font-weight: 400;
   margin: 0;
+  padding: 0.25rem 0;
+  padding-left: 0.25rem;
   line-height: 1.15;
+}
+
+.display .book__hold .book__info .book__details p.detail {
+  padding-left: 0;
   font-weight: 700;
   color: #110B11;
 }
 
-.display .book__hold .book__info p {
-  color: #262626;
-  font-size: 0.95rem;
-  font-weight: 400;
-  margin: 0;
-  padding: 0.35rem 0;
-  line-height: 1.15;
+.display .book__hold .book__button {
+  width: 60%;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.display .book__hold .book__button .book__link {
+  display: block;
+  color: #F5F5F5;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: #110B11;
+  background: #8776ae;
+  border-radius: 0.35rem;
+  -webkit-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+
+.display .book__hold .book__button .book__link:hover {
+  background: #341F68;
+  color: #F5F5F5;
 }
 /*# sourceMappingURL=styles.css.map */
