@@ -1,1 +1,154 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: #c2c9d6;
+}
+
+main {
+  margin: 0 auto;
+  width: 85%;
+  height: auto;
+}
+
+main .title {
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+  font-size: 5rem;
+  color: #341F68;
+  line-height: 2;
+  padding: 0;
+  margin: 0;
+  padding-top: 2.5rem;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+.search-wrapper {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  -webkit-box-shadow: 5px 5px 10px 5px rgba(17, 11, 17, 0.15);
+          box-shadow: 5px 5px 10px 5px rgba(17, 11, 17, 0.15);
+}
+
+.search-wrapper .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+.search-wrapper .search-form .bookinput {
+  background: #F5F5F5;
+  font-family: "Open Sans", sans-serif;
+  width: 85%;
+  margin: .5rem .75rem;
+  padding: 1.3rem;
+  font-size: 1.25rem;
+  border: none;
+}
+
+.search-wrapper .search-form .booksearch {
+  cursor: pointer;
+  background: #F5F5F5;
+  border: none;
+  padding: 0 1rem;
+  width: 15%;
+  font-size: 1.5rem;
+}
+
+.search-wrapper .search-form .booksearch svg {
+  min-width: 24px;
+  max-width: 32px;
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.display .placement-text {
+  font-family: "Abril Fatface", cursive;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(52, 31, 104, 0.5);
+  text-shadow: 2px 2px 4px #F5F5F5;
+}
+
+.display .book__hold {
+  width: 43%;
+  background: #F5F5F5;
+  padding: 1.25rem;
+  margin: 2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 3px 6px rgba(17, 11, 17, 0.3);
+          box-shadow: 2px 3px 6px rgba(17, 11, 17, 0.3);
+}
+
+.display .book__hold img {
+  width: 40%;
+  float: left;
+  border: 1px solid rgba(17, 11, 17, 0.3);
+  -webkit-box-shadow: 7px 7px 14px 0px rgba(17, 11, 17, 0.2);
+          box-shadow: 7px 7px 14px 0px rgba(17, 11, 17, 0.2);
+}
+
+.display .book__hold .book__info {
+  width: 54%;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+.display .book__hold .book__info h1 {
+  font-size: 1.75rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #110B11;
+}
+
+.display .book__hold .book__info p {
+  color: #262626;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.35rem 0;
+  line-height: 1.15;
+}
+/*# sourceMappingURL=styles.css.map */

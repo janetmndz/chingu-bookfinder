@@ -1,0 +1,116 @@
+$headingfont: "Abril Fatface", cursive
+$contentfont: "Open Sans", sans-serif
+
+$white: #F5F5F5
+$black: #110B11
+$blue: lighten(#9BA5BB, 13%)
+$dpurple: #341F68
+$lpurple: #8776ae
+
+=debug
+    border: 1px solid rgba(200,0,0,0.5)
+
+*, *::before, *::after
+    box-sizing: border-box
+
+body, html
+    margin: 0
+    padding: 0
+    height: 100%
+
+body
+    background: $blue
+
+main
+    margin: 0 auto
+    width: 85%
+    height: auto
+    .title
+        font-family: $headingfont
+        text-align: center
+        font-size: 5rem
+        color: $dpurple
+        line-height: 2
+        padding: 0
+        margin: 0
+        padding-top: 2.5rem
+        text-transform: lowercase
+        letter-spacing: 1px
+
+.search-wrapper
+    margin: 0 auto
+    width: 50%
+    height: auto
+    box-shadow: 5px 5px 10px 5px transparentize($black, 0.85)
+    .search-form
+        display: flex
+        align-items: center
+        background-color: $white
+        border-radius: 0.3rem
+        overflow: hidden
+        margin-bottom: 5rem
+        .bookinput
+            background: $white
+            font-family: $contentfont
+            width: 85%
+            margin: .5rem .75rem
+            padding: 1.3rem
+            font-size: 1.25rem
+            border: none
+        .booksearch
+            cursor: pointer
+            background: $white
+            border: none
+            padding: 0 1rem
+            width: 15%
+            font-size: 1.5rem
+            svg
+                min-width: 24px
+                max-width: 32px
+
+.display
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-content: space-around
+    height: 100%
+    margin: 0 auto
+    .placement-text
+        font-family: $headingfont
+        width: 100%
+        text-align: center
+        font-size: 3rem
+        color: transparentize($dpurple, 0.5)
+        text-shadow: 2px 2px 4px $white
+    .book__hold
+        width: 43%
+        background: $white
+        padding: 1.25rem
+        margin: 2rem
+        border-radius: 8px
+        box-shadow: 2px 3px 6px transparentize($black, 0.7) 
+        img
+            width: 40%
+            float: left
+            border: 1px solid transparentize($black, 0.7)
+            box-shadow: 7px 7px 14px 0px transparentize($black, 0.8)
+        .book__info
+            width: 54%
+            float: right
+            display: flex
+            flex-direction: column
+            font-family: $contentfont
+            h1
+                font-size: 1.75rem
+                padding: 0.5rem 0
+                margin: 0
+                line-height: 1.15
+                font-weight: 700
+                color: $black
+            p
+                color: lighten(black, 15%)
+                font-size: 0.95rem
+                font-weight: 400
+                margin: 0
+                padding: 0.35rem 0
+                line-height: 1.15
