@@ -21,7 +21,7 @@ function logBooks(arr){
     if (arr !== undefined){
         const html = arr.map(b => {
             const title = b.volumeInfo.title;
-            const image = (b.volumeInfo.hasOwnProperty('imageLinks')) ? (b.volumeInfo.imageLinks.thumbnail) : "https://placekitten.com/200/350";
+            const image = (b.volumeInfo.hasOwnProperty('imageLinks')) ? (b.volumeInfo.imageLinks.thumbnail) : "/img/noimage.svg";
             const authors = (b.volumeInfo.hasOwnProperty('authors')) ? (b.volumeInfo.authors.join(', ')) : "N/A";
             const publisher = (b.volumeInfo.hasOwnProperty('publisher')) ? (b.volumeInfo.publisher) : "N/A";
             const infoLink = b.volumeInfo.infoLink;
@@ -33,7 +33,7 @@ function logBooks(arr){
                     <div class="book__details">
                         <p class="detail">Author(s):</p>
                         <p>${authors}</p>
-                        <p class="detail">Publisher</p>
+                        <p class="detail">Publisher:</p>
                         <p>${publisher}</p>
                     </div>
                 </div>

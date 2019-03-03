@@ -81,6 +81,14 @@ main .title {
   border: none;
 }
 
+@media (max-width: 800px) {
+  .search-wrapper .search-form .bookinput {
+    width: 88%;
+    padding: 0.75rem;
+    font-size: 1.15rem;
+  }
+}
+
 .search-wrapper .search-form .booksearch {
   cursor: pointer;
   background: #F5F5F5;
@@ -90,8 +98,16 @@ main .title {
   font-size: 1.5rem;
 }
 
-.search-wrapper .search-form .booksearch svg {
-  min-width: 24px;
+@media (max-width: 800px) {
+  .search-wrapper .search-form .booksearch {
+    width: 12%;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+.search-wrapper .search-form .booksearch img {
+  min-width: 16px;
   max-width: 32px;
 }
 
@@ -127,8 +143,14 @@ main .title {
   width: 100%;
   text-align: center;
   font-size: 3rem;
-  color: rgba(52, 31, 104, 0.5);
+  color: rgba(52, 31, 104, 0.6);
   text-shadow: 2px 2px 4px #F5F5F5;
+}
+
+@media (max-width: 800px) {
+  .display .placement-text {
+    font-size: 2rem;
+  }
 }
 
 .display .book__hold {
@@ -169,6 +191,12 @@ main .title {
   color: #110B11;
   text-align: left;
   border: 1px solid #5858587a;
+}
+
+@media (max-width: 800px) {
+  .display .book__hold h1 {
+    font-size: 1.25rem;
+  }
 }
 
 .display .book__hold .book__info {
@@ -216,6 +244,12 @@ main .title {
   width: 60%;
   text-align: center;
   margin: 1.5rem auto;
+}
+
+@media (max-width: 800px) {
+  .display .book__hold .book__button {
+    width: 85%;
+  }
 }
 
 .display .book__hold .book__button .book__link {
